@@ -15,5 +15,10 @@ namespace BookStore.WebUI.Controllers
         {
             repository = repo;
         }
+
+        public ViewResult List()
+        {
+            return View(repository.Books);
+        }
     }
 }
